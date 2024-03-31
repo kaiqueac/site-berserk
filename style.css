@@ -1,0 +1,174 @@
+/* REGRAS */
+@charset "UTF-8";
+
+:root {
+    --cor01: #C5372E;
+    --cor02: #d4c8c8;
+}
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "ancient";
+    src: url("fontes/Ancient.ttf") format("truetype");
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: black;
+}
+
+header {
+    background-color: black;
+}
+
+div.img-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.img-titulo > img {
+    display: block;
+    background-color: black;
+    width: 120px;
+    height: 90px;
+}
+
+
+nav > ul {
+    height: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+
+nav > ul > li {
+    background-color: var(--cor01);
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+nav > ul > li:hover {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 5px;
+    border-radius: 10%;
+    background-color: #f14c40;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.356);
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > hr {
+    margin: 2px;
+    padding: 2px;
+    background-color: white;
+}
+
+div.conteudo > p {
+    padding-top: 5vw;
+    padding-bottom: 1vw;
+    font-size: 1.3em;
+}
+
+div.conteudo, div.historia > p, ol {
+    margin: 15px;
+    font-size: 1.1em;
+    color: white;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.resumo {
+    color: white;
+}
+
+div#img-guts {
+    margin-top: 5vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-image: url("imagens/guts.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+div#img-griffith {
+    margin-top: 5vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-image: url("imagens/griffith.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+div.titulo > h2 {
+    padding-left: 15px;
+    margin-left: 10vw;
+    font-size: 12vw;
+    font-weight: normal;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.164), transparent);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.637);
+    font-family: "ancient";
+    color: var(--cor01);
+}
+
+div.historia > ol > li > h3 {
+    margin-top: 2vw;
+    font-weight: normal;
+    color: var(--cor01);
+    font-family: "ancient", sans-serif;
+    font-size: 2.4em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
+}
+
+div.resumo {
+    background-color: #c5382e94;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.562);
+    padding-left: 5px;
+    margin-top: 3vw;
+    font-size: 1.4em;
+}
+
+
+footer {
+    padding: 5px;
+    font-size: 1.1em;
+    background-color: var(--cor01);
+    text-align: center;
+    color: white;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+footer > p > a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* efeito scroll reveal */
+.titulo, .conteudo, .historia, .resumo {
+    visibility: hidden;
+}
+
+
+
+
